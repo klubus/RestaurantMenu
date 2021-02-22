@@ -46,7 +46,8 @@ namespace Baza_Danych
 
         private void Back_Btn_Click(object sender, RoutedEventArgs e)
         {
-            //this.Frame.Navigate(typeof(MainWindow),null);
+            ChooseProductCategoryPage chooseProductPage = new ChooseProductCategoryPage();
+            Application.Current.MainWindow.Content = chooseProductPage;
         }
 
         private void Add_Btn_Click(object sender, RoutedEventArgs e)

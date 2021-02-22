@@ -30,5 +30,13 @@
                 </StackPanel>
             </Button>
         </StackPanel>
+        <DataGrid Name="productsData" AutoGenerateColumns="False" Margin="0,100,0,0">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Width="125" Binding="{Binding emp_id}"/>
+                <DataGridTextColumn Header="Typ" Width="125" Binding="{Binding fname}"/>
+                <DataGridTextColumn Header="Nazwa" Width="125" Binding="{Binding lname}"/>
+                <DataGridTextColumn Header="Cena" Width="125" Binding="{Binding hire_date}"/>
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </Page>
