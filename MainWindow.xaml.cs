@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace Baza_Danych
 {
@@ -20,37 +21,25 @@ namespace Baza_Danych
     /// </summary>
     public partial class MainWindow : Window
     {
+        DispatcherTimer timer;
         public MainWindow()
         {
             InitializeComponent();
         }
 
-        private void Soups_Btn_Click(object sender, RoutedEventArgs e)
+        private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            ProductsPage soupsPage = new ProductsPage();
-            soupsPage.ProductType = IProductTypeEnums.ProductTypes.Soups;
-            this.Content = soupsPage;
+            timer = new DispatcherTimer();
+            timer.Interval = TimeSpan.FromSeconds(3);
+            timer.Tick += onTimerTick;
+            timer.Start();
         }
 
-        private void MainDishes_Btn_Click(object sender, RoutedEventArgs e)
+        void onTimerTick(object sender, EventArgs e)
         {
-            ProductsPage mainDishesPage = new ProductsPage();
-            mainDishesPage.ProductType = IProductTypeEnums.ProductTypes.MainDishes;
-            this.Content = mainDishesPage;
-        }
-
-        private void Desserts_Btn_Click(object sender, RoutedEventArgs e)
-        {
-            ProductsPage dessertsPage = new ProductsPage();
-            dessertsPage.ProductType = IProductTypeEnums.ProductTypes.Desserts;
-            this.Content = dessertsPage;
-        }
-
-        private void Drinks_Btn_Click(object sender, RoutedEventArgs e)
-        {
-            ProductsPage drinksPage = new ProductsPage();
-            drinksPage.ProductType = IProductTypeEnums.ProductTypes.Drinks;
-            this.Content = drinksPage;
+            timer.Stop();
+            ChooseProductCategoryPage chooseProductCategoryPage = new ChooseProductCategoryPage();
+            this.Content = new ChooseProductCategoryPage();
         }
     }
 }

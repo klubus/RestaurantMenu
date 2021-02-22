@@ -43,5 +43,20 @@ namespace Baza_Danych
                     break;
             }
         }
+
+        private void Back_Btn_Click(object sender, RoutedEventArgs e)
+        {
+            //this.Frame.Navigate(typeof(MainWindow),null);
+        }
+
+        private void Add_Btn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Edit_Btn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

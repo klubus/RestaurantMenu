@@ -10,5 +10,25 @@
 
     <Grid>
         <Label HorizontalAlignment="Center" FontFamily="Doppio One" FontSize="14" Height="30" VerticalAlignment="Top" x:Name="ProductTypeLbl"></Label>
+        <StackPanel Orientation="Horizontal" Height="50" Width="420"  Margin="10,40,0,0" VerticalAlignment="Top" Background="{DynamicResource {x:Static SystemColors.MenuBrushKey}}">
+            <Button Width="120" Background="#FF673A1B" Foreground="White" x:Name="Back_Btn" Click="Back_Btn_Click">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="/Assets/backIcon.png"/>
+                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">Powrót</TextBlock>
+                </StackPanel>
+            </Button>
+            <Button Width="120" Background="#FF673A1B" Foreground="White" x:Name="Add_Btn" Click="Add_Btn_Click" Margin="30,0,30,0">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="/Assets/addIcon.png"/>
+                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">Dodaj Danie</TextBlock>
+                </StackPanel>
+            </Button>
+            <Button Width="120" Background="#FF673A1B" Foreground="White" x:Name="Edit_Btn" Click="Edit_Btn_Click">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="/Assets/editIcon.png"/>
+                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">Edytuj Danie</TextBlock>
+                </StackPanel>
+            </Button>
+        </StackPanel>
     </Grid>
 </Page>

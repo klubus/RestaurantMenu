@@ -8,10 +8,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Assets\addIcon.png" />
+    <None Remove="Assets\backIcon.png" />
+    <None Remove="Assets\editIcon.png" />
     <None Remove="Assets\menu.jpg" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Assets\addIcon.png" />
+    <Resource Include="Assets\backIcon.png" />
+    <Resource Include="Assets\editIcon.png" />
     <Resource Include="Assets\menu.jpg" />
   </ItemGroup>
 

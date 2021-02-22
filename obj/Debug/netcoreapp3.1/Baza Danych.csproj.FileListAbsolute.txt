@@ -21,3 +21,5 @@ D:\cSharp\Zadanka na studia\Baza danych\Baza Danych\obj\Debug\netcoreapp3.1\Baza
 D:\cSharp\Zadanka na studia\Baza danych\Baza Danych\obj\Debug\netcoreapp3.1\Baza Danych.genruntimeconfig.cache
 D:\cSharp\Zadanka na studia\Baza danych\Baza Danych\obj\Debug\netcoreapp3.1\Baza_Danych.Properties.Resources.resources
 D:\cSharp\Zadanka na studia\Baza danych\Baza Danych\obj\Debug\netcoreapp3.1\Baza Danych.csproj.GenerateResource.cache
+D:\cSharp\Zadanka na studia\Baza danych\Baza Danych\obj\Debug\netcoreapp3.1\ChooseProductCategoryPage.g.cs
+D:\cSharp\Zadanka na studia\Baza danych\Baza Danych\obj\Debug\netcoreapp3.1\ChooseProductCategoryPage.baml
