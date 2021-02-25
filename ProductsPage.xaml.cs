@@ -52,12 +52,14 @@ namespace Baza_Danych
 
         private void Add_Btn_Click(object sender, RoutedEventArgs e)
         {
-
+            AddProductPage addProductPage = new AddProductPage();
+            addProductPage.ProductType = ProductType;
         }
 
         private void Edit_Btn_Click(object sender, RoutedEventArgs e)
         {
-
+            EditProductPage editProductPage = new EditProductPage();
+            editProductPage.ProductType = ProductType;
         }
     }
 }
