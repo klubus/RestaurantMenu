@@ -1,0 +1,23 @@
+﻿<Page x:Class="Baza_Danych.EditProductPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Baza_Danych"
+      mc:Ignorable="d" 
+      d:DesignHeight="800" d:DesignWidth="500"
+      Title="EditProductPage">
+
+    <Grid>
+        <Label Content="Edytuj danie" HorizontalAlignment="Center" FontFamily="Doppio One" FontSize="24" Height="40" VerticalAlignment="Top" Foreground="#FFFBF7F7" x:Name="ProductTypeLbl"></Label>
+        <StackPanel Orientation="Vertical" Margin="0,60,0,0" VerticalAlignment="Top">
+            <Label Content="Typ" HorizontalAlignment="Center" FontFamily="Doppio One" FontSize="18" Height="36" Foreground="#FFFBF7F7"/>
+            <TextBlock x:Name="typeLbl" VerticalAlignment="Center" FontFamily="Doppio One" FontSize="16" Height="26" Foreground="#FFFBF7F7" Background="#cccccc" Text="Typ dania" Width="250" IsEnabled="False"/>
+            <Label Content="Nazwa" HorizontalAlignment="Center" FontFamily="Doppio One" FontSize="18" Height="36" Foreground="#FFFBF7F7"/>
+            <TextBlock x:Name="nameLbl" HorizontalAlignment="Center" FontFamily="Doppio One" FontSize="16" Height="26" Foreground="#FFFBF7F7"  Background="#cccccc" Text="Nazwa dania" Width="250"/>
+            <Label Content="Cena" HorizontalAlignment="Center" FontFamily="Doppio One" FontSize="18" Height="36" Foreground="#FFFBF7F7"/>
+            <TextBlock x:Name="priceLbl" HorizontalAlignment="Center" FontFamily="Doppio One" FontSize="16" Height="26" Foreground="#FFFBF7F7" Background="#cccccc" Text="Cena" Width="250"/>
+            <Button Width="200" Margin="0,30,0,0">Edytuj</Button>
+        </StackPanel>
+    </Grid>
+</Page>
